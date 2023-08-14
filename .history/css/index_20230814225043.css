@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+/* HEADING */
+.heading {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.heading h2 {
+  font-size: 40px;
+  color: #ff4f81;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.heading p {
+  text-transform: capitalize;
+  letter-spacing: 4px;
+  color: black;
+  font-size: 17px;
+}
+
+.heading p::after {
+  content: "";
+  width: 70px;
+  height: 2px;
+  background-color: black;
+  display: block;
+  margin: 20px auto;
+}
+
+.heading--white p {
+  color: white;
+}
+
+.section {
+  padding: 5rem 0;
+}

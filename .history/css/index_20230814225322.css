@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Work Sans", sans-serif;
+}
+/* HEADING */
+.header-section {
+    max-width: 750px;
+    margin: 0 auto;
+}
+.header-section h1 {
+    
+}
