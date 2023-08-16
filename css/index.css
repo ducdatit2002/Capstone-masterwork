@@ -9,10 +9,12 @@ body {
   font-family: "Nunito", sans-serif;
   font-family: "Roboto", sans-serif;
 }
+
 /* HEADING */
 .header-section {
   max-width: 750px;
   margin: 0 auto;
+  text-align: center;
 }
 .header-section h1 {
   font-size: 16px;
