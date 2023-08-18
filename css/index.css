@@ -9,6 +9,9 @@ body {
   font-family: "Nunito", sans-serif;
   font-family: "Roboto", sans-serif;
 }
+body a {
+  text-decoration: none;
+}
 
 /* HEADING */
 .header-section {
@@ -39,3 +42,59 @@ body {
   margin-right: auto;
   margin-top: 5px;
 }
+
+/* FEATURES */
+.parentHorizontal {
+  display: block;
+  width: 100%;
+  margin: 0px;
+}
+
+.parentHorizontal .nav-item a {
+  color: black;
+}
+
+.parentHorizontal .nav-item:hover a {
+  color: #dc4f72;
+}
+
+/* Featured */
+.featured {
+}
+
+.featured .feat__Project {
+  width: 100%;
+}
+
+.featured .feat__Project .nav-item {
+  font-weight: 700;
+  font-size: 22px;
+  padding: 15px;
+  list-style: none;
+  cursor: pointer;
+  float: left;
+  width: 33.333%;
+  text-align: center;
+  border-bottom: 3px solid #5a5a5a;
+}
+.featured .feat__Project .nav-item a {
+  text-decoration: none;
+  color: black;
+  background-color: white;
+}
+
+.featured .feat__Project .nav-item .active {
+  border-bottom: 3px solid #dc4f72;
+}
+
+/* .featured .feat__Project .nav-item .active {
+} */
+/* .featured .feat__Project .nav-item::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: rgb(193, 193, 193);
+  bottom: 0;
+  left: 0;
+} */
