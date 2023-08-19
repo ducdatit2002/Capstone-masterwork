@@ -322,7 +322,7 @@ a.search-search span.fa:hover {
     display: inline-block;
     position: relative;
     margin: 0;
-}
+/* }
 .theme-switch input {
     display: none;
 }
@@ -358,7 +358,7 @@ input[type="radio"], input[type="checkbox"] {
     height: 20px;
     border: 2px solid;
     border-bottom: 2px solid transparent;
-}
+} */
 
 /* BANNER */
 .banner {

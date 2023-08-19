@@ -329,7 +329,7 @@ a.search-search span.fa:hover {
 input[type="radio"], input[type="checkbox"] {
     box-sizing: border-box;
     padding: 0;
-}
+/* }
 .mode-container {
     width: 24px;
     height: 24px;
@@ -358,7 +358,7 @@ input[type="radio"], input[type="checkbox"] {
     height: 20px;
     border: 2px solid;
     border-bottom: 2px solid transparent;
-}
+} */
 
 /* BANNER */
 .banner {

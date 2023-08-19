@@ -350,15 +350,6 @@ input[type="radio"], input[type="checkbox"] {
     box-shadow: inset 0 0 0 2px;
     border: 6px solid transparent;
 }
-.gg-moon {
-    overflow: hidden;
-    position: relative;
-    transform: rotate(-135deg) scale(var(--ggs, 1));
-    width: 20px;
-    height: 20px;
-    border: 2px solid;
-    border-bottom: 2px solid transparent;
-}
 
 /* BANNER */
 .banner {

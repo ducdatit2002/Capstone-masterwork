@@ -353,13 +353,20 @@ input[type="radio"], input[type="checkbox"] {
 .gg-moon {
     overflow: hidden;
     position: relative;
+    transform: rotate(-135deg) scale(var(.gg-moon {
+    overflow: hidden;
+    position: relative;
     transform: rotate(-135deg) scale(var(--ggs, 1));
     width: 20px;
     height: 20px;
     border: 2px solid;
     border-bottom: 2px solid transparent;
+}, 1));
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-bottom: 2px solid transparent;
 }
-
 /* BANNER */
 .banner {
   margin-top: 90px;

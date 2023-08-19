@@ -314,7 +314,7 @@ a.search-search span.fa:hover {
   border-color: #dc4f72;
 }
 /* LIGHT AND DARK */
-.theme-switch-wrapper {
+/* .theme-switch-wrapper {
     display: flex;
     align-items: center;
 }
@@ -358,7 +358,7 @@ input[type="radio"], input[type="checkbox"] {
     height: 20px;
     border: 2px solid;
     border-bottom: 2px solid transparent;
-}
+} */
 
 /* BANNER */
 .banner {
