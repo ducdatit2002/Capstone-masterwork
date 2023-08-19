@@ -8,7 +8,6 @@ body {
   font-family: "Hind", sans-serif;
   font-family: "Nunito", sans-serif;
   font-family: "Roboto", sans-serif;
-  scroll-behavior: smooth;
 }
 body, button, input, select, optgroup, textarea {
     color: #404040;
@@ -19,9 +18,6 @@ body, button, input, select, optgroup, textarea {
 a,
 a:hover {
   text-decoration: none;
-}
-nav ul li a, nav ul li a:after, nav ul li a:before {
-    transition: all .5s;
 }
 /* HEADING */
 .header-section {
@@ -148,31 +144,6 @@ navbar-expand-lg .navbar-nav .nav-item.active .nav-link {
   display: block;
   padding: 0.5rem 1rem;
 }
-.dropdown-item {
-    display: block;
-    width: 100%;
-    padding: 0.25rem 1.5rem;
-    clear: both;
-    font-weight: 400;
-    color: #212529;
-    text-align: inherit;
-    white-space: nowrap;
-    background-color: transparent;
-    border: 0;
-}
-a.dropdown-item {
-    font-weight: 400;
-    font-size: 16px;
-    color: #2C3038;
-    position: relative;
-    padding-top: 0;
-    padding-bottom: 14px;
-    transition: 0.5s all;
-}
-a.dropdown-item:hover {
-    color: #dc4f72;
-}
-
 a.nav-link:before,
 a.dropdown-item:before {
   position: absolute;
@@ -492,7 +463,7 @@ img.img-curve:hover {
 }
 .faq-block .faq-content ul li {
     position: relative;
-    padding: 20px 50px 10px 20px;
+    padding: 20px 50px 25px 20px;
     border: 1px solid #eee;
     margin: 0 0 15px 0;
     border-radius: 6px;
@@ -563,35 +534,6 @@ img.img-curve:hover {
 }
 
 
-/* BACK TO TOP JS */
-#movetop {
-    display: block;
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    z-index: 99;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    width: 50px;
-    height: 45px;
-    background: #dc4f72;
-    padding: 0;
-    opacity: 0.7;
-    transition: all 0.2s;
-}
-#movetop span.fa {
-    line-height: 45px;
-    color: #fff;
-    font-size: 22px;
-}
-.cd-top--is-visible {
-  visibility: visible;
-  opacity: 1;
-}
-.cd-top--fade-out { 
-  opacity: .5;
-}
 
 
 

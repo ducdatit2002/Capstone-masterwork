@@ -91,8 +91,11 @@
                   aria-labelledby="navbar-dropdown-menu-link-21"
                 >
                   <a href="#" class="dropdown-item">Blog Posts</a
-                  ><a href="#" class="dropdown-item">Landing page</a
-                  ><a href="#" class="dropdown-item">404 page</a>
+                  ><a href="#" class="dropdown-item" id="menu-item-24"
+                    >Landing page</a
+                  ><a href="#" class="dropdown-item"
+                    >404 page</a
+                  >
                 </div>
               </li>
               <li
@@ -136,7 +139,7 @@
             <!-- Buy button -->
           </div>
           <!-- toggle switch for light and dark theme -->
-          <div class="mobile-position DarkandLight">
+          <!-- <div class="mobile-position DarkandLight">
             <nav class="navigation">
               <div class="theme-switch-wrapper">
                 <label class="theme-switch" for="checkbox">
@@ -148,7 +151,7 @@
                 </label>
               </div>
             </nav>
-          </div>
+          </div> -->
           <!-- //toggle switch for light and dark theme -->
         </nav>
       </div>
@@ -441,15 +444,6 @@
     <section class="booking"></section>
     <!-- FOOTER (HUY)-->
     <footer></footer>
-    <!-- BACK TO TOP -->
-    <button
-      onclick="topFunction()"
-      id="movetop"
-      title="Go to top"
-      style="display: block"
-    >
-      <span class="fa fa-angle-up"></span>
-    </button>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -470,8 +464,8 @@
 
     <!-- JQUERY WAYPOINT -->
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"
-      integrity="sha512-ZKNVEa7gi0Dz4Rq9jXcySgcPiK+5f01CqW+ZoKLLKr9VMXuCsw3RjWiv8ZpIOa0hxO79np7Ec8DDWALM0bDOaQ=="
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.min.js"
+      integrity="sha512-fHXRw0CXruAoINU11+hgqYvY/PcsOWzmj0QmcSOtjlJcqITbPyypc8cYpidjPurWpCnlB8VKfRwx6PIpASCUkQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
@@ -479,36 +473,6 @@
     <script src="./Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script>
     <script>
       $(".num").countUp();
-    </script>
-    <!-- BACK TO TOP JS -->
-    <script src="./back-to-top-master/assets/js/main.js"></script>
-    <script src="./back-to-top-master/assets/js/util.js"></script>
-    <script
-      data-cfasync="false"
-      src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
-    ></script>
-    <script>
-      // When the user scrolls down 20px from the top of the document, show the button
-      window.onscroll = function () {
-        scrollFunction();
-      };
-
-      function scrollFunction() {
-        if (
-          document.body.scrollTop > 20 ||
-          document.documentElement.scrollTop > 20
-        ) {
-          document.getElementById("movetop").style.display = "block";
-        } else {
-          document.getElementById("movetop").style.display = "none";
-        }
-      }
-
-      // When the user clicks on the button, scroll to the top of the document
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
     </script>
   </body>
 </html>

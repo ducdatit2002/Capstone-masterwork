@@ -8,7 +8,6 @@ body {
   font-family: "Hind", sans-serif;
   font-family: "Nunito", sans-serif;
   font-family: "Roboto", sans-serif;
-  scroll-behavior: smooth;
 }
 body, button, input, select, optgroup, textarea {
     color: #404040;
@@ -578,7 +577,7 @@ img.img-curve:hover {
     background: #dc4f72;
     padding: 0;
     opacity: 0.7;
-    transition: all 0.2s;
+    transition: 0.3s ease;
 }
 #movetop span.fa {
     line-height: 45px;

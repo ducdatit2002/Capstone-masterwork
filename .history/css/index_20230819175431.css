@@ -8,7 +8,6 @@ body {
   font-family: "Hind", sans-serif;
   font-family: "Nunito", sans-serif;
   font-family: "Roboto", sans-serif;
-  scroll-behavior: smooth;
 }
 body, button, input, select, optgroup, textarea {
     color: #404040;
@@ -578,21 +577,21 @@ img.img-curve:hover {
     background: #dc4f72;
     padding: 0;
     opacity: 0.7;
-    transition: all 0.2s;
+    transition: 0.3s ease;
 }
 #movetop span.fa {
     line-height: 45px;
     color: #fff;
     font-size: 22px;
 }
-.cd-top--is-visible {
+.cd-top--is-visible { // back-to-top button visible
   visibility: visible;
   opacity: 1;
 }
-.cd-top--fade-out { 
+
+.cd-top--fade-out { // reduce button opacity if user keeps scrolling
   opacity: .5;
 }
-
 
 
 @media only screen and (max-width: 991px) {

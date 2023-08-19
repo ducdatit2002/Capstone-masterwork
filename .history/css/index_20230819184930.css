@@ -8,7 +8,7 @@ body {
   font-family: "Hind", sans-serif;
   font-family: "Nunito", sans-serif;
   font-family: "Roboto", sans-serif;
-  scroll-behavior: smooth;
+  
 }
 body, button, input, select, optgroup, textarea {
     color: #404040;
