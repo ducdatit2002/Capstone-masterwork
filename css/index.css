@@ -384,6 +384,9 @@ footer .copyright a {
   .ourClients .slider-info {
     display: block;
   }
+  .col-md-6 {
+    overflow: hidden;
+  }
   .img-circle {
     margin-left: auto;
     margin-right: auto;
@@ -393,13 +396,6 @@ footer .copyright a {
   }
   .message {
     text-align: center;
-  }
-
-  .message span {
-    display: none;
-  }
-
-  footer .copyright {
   }
 
   footer .below-section {
