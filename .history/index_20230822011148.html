@@ -1006,5 +1006,19 @@
         moonIcon.style.display = "inline-block";
       });
     </script>
+    <script>
+     function toggleButton() {
+  var expandIcon = document.getElementById("expandIcon");
+  var closeIcon = document.getElementById("closeIcon");
+
+  if (expandIcon.classList.contains("hide")) {
+    expandIcon.classList.remove("hide");
+    closeIcon.classList.add("hide");
+  } else {
+    expandIcon.classList.add("hide");
+    closeIcon.classList.remove("hide");
+  }
+}
+    </script>
   </body>
 </html>

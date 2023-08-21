@@ -66,7 +66,7 @@
             aria-controls="navbar-content"
             aria-expanded="false"
             aria-label="Toggle Navigation"        
-            onclick="toggleButton()"
+  onclick="toggleButton()"
           >
             <span
               class="navbar-toggler-icon fa icon-expand fa-bars"
@@ -1005,6 +1005,15 @@
         sunIcon.style.display = "none";
         moonIcon.style.display = "inline-block";
       });
+    </script>
+    <script>
+      function toggleButton() {
+  var expandIcon = document.getElementById("expandIcon");
+  var closeIcon = document.getElementById("closeIcon");
+
+  expandIcon.classList.toggle("hide");
+  closeIcon.classList.toggle("hide");
+}
     </script>
   </body>
 </html>

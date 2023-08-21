@@ -50,9 +50,6 @@ section {
   max-height: max-content;
   margin: 50px 0;
 }
-.hide {
-  display :none;
-}
 /* BUTTONS */
 .theme-button {
   transition: 0.3s ease-out;
@@ -1013,8 +1010,7 @@ footer .copyright a {
 .mobile-position {
     top: 9px;
     right: 46px;
-}
-}
+
 @media screen and (max-width: 667px) {
   .ourClients .slider-info {
     display: block;
@@ -1070,10 +1066,8 @@ footer .copyright a {
     line-height: 44px;
     padding: 0px 20px;
   }
-  .nav-link.active::before {
-    width: 0%;
 }
-}
+
 @media only screen and (max-width: 991px) {
   .navbar-nav {
     -webkit-animation-name: none;
@@ -1117,10 +1111,5 @@ footer .copyright a {
   .navbar-toggler {
     border: 0 none;
     font-size: 24px;
-}
-.mobile-position {
-    position: absolute;
-    right: 50px;
-    top: 12px;
 }
 }

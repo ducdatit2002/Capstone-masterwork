@@ -51,7 +51,7 @@ section {
   margin: 50px 0;
 }
 .hide {
-  display :none;
+  display 
 }
 /* BUTTONS */
 .theme-button {
@@ -1071,7 +1071,7 @@ footer .copyright a {
     padding: 0px 20px;
   }
   .nav-link.active::before {
-    width: 0%;
+    width: 100%;
 }
 }
 @media only screen and (max-width: 991px) {

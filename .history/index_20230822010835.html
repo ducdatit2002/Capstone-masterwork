@@ -24,10 +24,7 @@
       rel="stylesheet"
     />
     <!-- FONT SUN - MOON -->
-    <link
-      href="https://unpkg.com/css.gg@2.0.0/icons/css/moon.css"
-      rel="stylesheet"
-    />
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/moon.css' rel='stylesheet'>
     <!-- Owl carausel -->
     <link
       rel="stylesheet"
@@ -65,17 +62,10 @@
             data-target="#navbar-content"
             aria-controls="navbar-content"
             aria-expanded="false"
-            aria-label="Toggle Navigation"        
-            onclick="toggleButton()"
+            aria-label="Toggle Navigation"
           >
-            <span
-              class="navbar-toggler-icon fa icon-expand fa-bars"
-              id="expandIcon"
-            ></span>
-            <span
-              class="navbar-toggler-icon fa icon-close fa-times"
-              id="closeIcon"
-            ></span>
+            <span class="navbar-toggler-icon fa icon-expand fa-bars" id="expandIcon"></span>
+            <span class="navbar-toggler-icon fa icon-close fa-times" id="closeIcon"></span>
           </button>
 
           <div class="collapse navbar-collapse" id="navbar-content">
@@ -990,21 +980,21 @@
     </script>
     <!-- DARK-MODE -->
     <script>
-      const moonIcon = document.querySelector(".gg-moon");
-      const sunIcon = document.querySelector(".gg-sun");
-      const body = document.querySelector("body");
+      const moonIcon = document.querySelector('.gg-moon');
+const sunIcon = document.querySelector('.gg-sun');
+const body = document.querySelector('body');
 
-      moonIcon.addEventListener("click", function () {
-        body.classList.add("dark-mode");
-        moonIcon.style.display = "none";
-        sunIcon.style.display = "inline-block";
-      });
+moonIcon.addEventListener('click', function() {
+  body.classList.add('dark-mode');
+  moonIcon.style.display = 'none';
+  sunIcon.style.display = 'inline-block';
+});
 
-      sunIcon.addEventListener("click", function () {
-        body.classList.remove("dark-mode");
-        sunIcon.style.display = "none";
-        moonIcon.style.display = "inline-block";
-      });
+sunIcon.addEventListener('click', function() {
+  body.classList.remove('dark-mode');
+  sunIcon.style.display = 'none';
+  moonIcon.style.display = 'inline-block';
+});
     </script>
   </body>
 </html>
