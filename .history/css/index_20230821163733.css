@@ -86,6 +86,7 @@ section {
   margin-right: auto;
   margin-top: 5px;
 }
+<<<<<<< HEAD
 /* HEADER */
 li {
   list-style-type: none;
@@ -708,6 +709,7 @@ img.img-curve:hover {
     text-align: center;
   }
 }
+=======
 
 /* FEATURES */
 .parentHorizontal {
@@ -1037,4 +1039,5 @@ footer .copyright a {
   footer .below-section {
     flex-direction: column;
   }
+>>>>>>> huypham.dev
 }
