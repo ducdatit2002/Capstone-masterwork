@@ -23,8 +23,6 @@
       href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <!-- FONT SUN - MOON -->
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/moon.css' rel='stylesheet'>
     <!-- Owl carausel -->
     <link
       rel="stylesheet"
@@ -115,11 +113,7 @@
 
             <!--/search-right-->
             <div class="search-right mr-lg-3">
-              <a
-                href="#search"
-                class="search-search"
-                title="search"
-                id="search-button"
+              <a href="#search" class="search-search" title="search"
                 ><span class="fa fa-search" aria-hidden="true"></span
               ></a>
               <!-- search popup -->
@@ -157,8 +151,8 @@
                 <label class="theme-switch" for="checkbox">
                   <input type="checkbox" id="checkbox" />
                   <div class="mode-container">
-                    <i class="gg-moon"></i>
-                    <i class="gg-sun"></i>
+                    <i class="ionicons ion-ios-sunny-outline"></i>
+                    <i class="ionicons ion-ios-moon-outline"></i>
                   </div>
                 </label>
               </div>
@@ -870,9 +864,9 @@
     >
       <span class="fa fa-angle-up"></span>
     </button>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
     <script
       src="https://code.jquery.com/jquery-3.7.0.js"
       integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
@@ -961,40 +955,12 @@
     </script>
     <!-- SEARCH POPUP -->
     <script>
-      $(document).ready(function () {
-        $("#search-button").click(function (e) {
-          e.preventDefault();
-          $("#search").css("visibility", "visible").css("opacity", "1");
-        });
-
-        $("#close").click(function (e) {
-          e.preventDefault();
-          $("#search").css("visibility", "hidden").css("opacity", "0");
-        });
-
-        $(".close").click(function (e) {
-          e.preventDefault();
-          $("#search").css("visibility", "hidden").css("opacity", "0");
+      $(''.search-search").click(function () {
+        $("#search").show();
+        $("#close").click(function () {
+          $(".search-popup").hide();
         });
       });
-    </script>
-    <!-- DARK-MODE -->
-    <script>
-      const moonIcon = document.querySelector('.gg-moon');
-const sunIcon = document.querySelector('.gg-sun');
-const body = document.querySelector('body');
-
-moonIcon.addEventListener('click', function() {
-  body.classList.add('dark-mode');
-  moonIcon.style.display = 'none';
-  sunIcon.style.display = 'inline-block';
-});
-
-sunIcon.addEventListener('click', function() {
-  body.classList.remove('dark-mode');
-  sunIcon.style.display = 'none';
-  moonIcon.style.display = 'inline-block';
-});
     </script>
   </body>
 </html>

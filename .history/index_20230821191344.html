@@ -23,8 +23,6 @@
       href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <!-- FONT SUN - MOON -->
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/moon.css' rel='stylesheet'>
     <!-- Owl carausel -->
     <link
       rel="stylesheet"
@@ -114,18 +112,14 @@
             </ul>
 
             <!--/search-right-->
-            <div class="search-right mr-lg-3">
-              <a
-                href="#search"
-                class="search-search"
-                title="search"
-                id="search-button"
+            <div class="search-right HeaderSearch mr-lg-3">
+              <a href="#search" class="search-search" title="search"
                 ><span class="fa fa-search" aria-hidden="true"></span
               ></a>
               <!-- search popup -->
               <div id="search" class="pop-overlay">
                 <div class="popup">
-                  <form method="GET" class="search-box d-sm-flex">
+                  <form action="#" method="GET" class="search-box d-sm-flex">
                     <input
                       type="search"
                       placeholder="Enter Keyword"
@@ -157,8 +151,8 @@
                 <label class="theme-switch" for="checkbox">
                   <input type="checkbox" id="checkbox" />
                   <div class="mode-container">
-                    <i class="gg-moon"></i>
-                    <i class="gg-sun"></i>
+                    <i class="ionicons ion-ios-sunny-outline"></i>
+                    <i class="ionicons ion-ios-moon-outline"></i>
                   </div>
                 </label>
               </div>
@@ -350,7 +344,7 @@
     <!-- QUESTION AND ANSWER (Đạt)-->
     <section class="questionAnswer">
       <div class="faq-block py-5">
-        <div class="container py-lg-5">
+        <div class="container py-lg-5 HomePageFaq">
           <div class="header-section text-center mx-auto">
             <h1>Questions and Answers</h1>
             <h3>General FAQs</h3>
@@ -370,7 +364,7 @@
                 />
               </div>
             </div>
-            <div class="col-md-7 pl-md-5">
+            <div class="col-md-7 mt-5 pl-md-5">
               <section class="faq-content" id="faq">
                 <div class="faq-page">
                   <ul>
@@ -449,7 +443,7 @@
       </div>
     </section>
     <!-- FEATURED CASES (HUY) -->
-    <section class="featured pb-5 mb-4">
+    <section class="featured pb-5 mb-4 ">
       <div class="container py-lg-3">
         <div class="header-section">
           <h1>FEATURED CASES</h1>
@@ -470,7 +464,7 @@
               >
                 <li class="nav-item list-group-item" role="presentation">
                   <a
-                    class="nav-link nav-link-1 active"
+                    class="nav-link active"
                     id="pills-home-tab"
                     data-toggle="pill"
                     href="#pills-home"
@@ -482,7 +476,7 @@
                 </li>
                 <li class="nav-item list-group-item" role="presentation">
                   <a
-                    class="nav-link nav-link-1"
+                    class="nav-link"
                     id="pills-profile-tab"
                     data-toggle="pill"
                     href="#pills-profile"
@@ -494,7 +488,7 @@
                 </li>
                 <li class="nav-item list-group-item" role="presentation">
                   <a
-                    class="nav-link nav-link-1"
+                    class="nav-link"
                     id="pills-contact-tab"
                     data-toggle="pill"
                     href="#pills-contact"
@@ -526,12 +520,7 @@
                             blanditiis, necessitatibus consectetur modi ipsum
                             natus accusantium sit pariatur.
                           </p>
-                          <a
-                            href="#"
-                            class="btn btn-outline-primary theme-button"
-                          >
-                            Know more
-                          </a>
+                          <a href="#" class="btn theme-button"> Know more </a>
                         </div>
                         <div
                           class="col-md-6"
@@ -565,12 +554,7 @@
                             blanditiis, necessitatibus consectetur modi ipsum
                             natus accusantium sit pariatur.
                           </p>
-                          <a
-                            href="#"
-                            class="btn btn-outline-primary theme-button"
-                          >
-                            Know more
-                          </a>
+                          <a href="#" class="btn theme-button"> Know more </a>
                         </div>
                         <div
                           class="col-md-6"
@@ -606,12 +590,7 @@
                             blanditiis, necessitatibus consectetur modi ipsum
                             natus accusantium sit pariatur.
                           </p>
-                          <a
-                            href="#"
-                            class="btn btn-outline-primary theme-button"
-                          >
-                            Know more
-                          </a>
+                          <a href="#" class="btn theme-button"> Know more </a>
                         </div>
                         <div
                           class="col-md-6"
@@ -760,12 +739,8 @@
           </p>
         </div>
         <div class="buttons mt-5">
-          <a href="#book" class="btn btn-outline-primary mr-2 theme-button"
-            >Book a Demo</a
-          >
-          <a href="#started" class="btn btn-primary theme-button ml-2">
-            Get Started</a
-          >
+          <a href="#book" class="btn btn-outline-primary mr-2 theme-button">Book a Demo</a>
+          <a href="#started" class="btn btn-primary theme-button ml-2"> Get Started</a>
         </div>
       </div>
     </section>
@@ -788,15 +763,20 @@
                 <h3>Categories</h3>
                 <ul class="footer-gd-16">
                   <li><a href="#url">Business</a></li>
-                  <li><a href="#url">Design</a></li>
-                  <li><a href="#url">Industry</a></li>
-                  <li><a href="about.html">Programming</a></li>
+                  <li><a href="#url">Our Branches</a></li>
+                  <li><a href="#url">Latest Media</a></li>
+                  <li><a href="about.html">About Company</a></li>
+                  <li><a href="#url">Our People</a></li>
                 </ul>
               </div>
               <div class="col-md-4 column mt-md-0 mt-4">
-                <h3>Archives</h3>
+                <h3>Our Services</h3>
                 <ul class="footer-gd-16">
-                  <li><a href="#url">March 2021</a></li>
+                  <li><a href="#url">Privacy Policy</a></li>
+                  <li><a href="#url">Our Terms</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="#landing-single.html">Landing Page</a></li>
+                  <li><a href="#url">Our People</a></li>
                 </ul>
               </div>
             </div>
@@ -861,7 +841,7 @@
         </div>
       </div>
     </footer>
-    <!-- BACK TO TOP -->
+        <!-- BACK TO TOP -->
     <button
       onclick="topFunction()"
       id="movetop"
@@ -870,9 +850,9 @@
     >
       <span class="fa fa-angle-up"></span>
     </button>
-
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
     <script
       src="https://code.jquery.com/jquery-3.7.0.js"
       integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM="
@@ -933,12 +913,7 @@
         document.documentElement.scrollTop = 0;
       }
     </script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
-      integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!-- Owl carausel -->
     <script>
@@ -958,43 +933,6 @@
           },
         },
       });
-    </script>
-    <!-- SEARCH POPUP -->
-    <script>
-      $(document).ready(function () {
-        $("#search-button").click(function (e) {
-          e.preventDefault();
-          $("#search").css("visibility", "visible").css("opacity", "1");
-        });
-
-        $("#close").click(function (e) {
-          e.preventDefault();
-          $("#search").css("visibility", "hidden").css("opacity", "0");
-        });
-
-        $(".close").click(function (e) {
-          e.preventDefault();
-          $("#search").css("visibility", "hidden").css("opacity", "0");
-        });
-      });
-    </script>
-    <!-- DARK-MODE -->
-    <script>
-      const moonIcon = document.querySelector('.gg-moon');
-const sunIcon = document.querySelector('.gg-sun');
-const body = document.querySelector('body');
-
-moonIcon.addEventListener('click', function() {
-  body.classList.add('dark-mode');
-  moonIcon.style.display = 'none';
-  sunIcon.style.display = 'inline-block';
-});
-
-sunIcon.addEventListener('click', function() {
-  body.classList.remove('dark-mode');
-  sunIcon.style.display = 'none';
-  moonIcon.style.display = 'inline-block';
-});
     </script>
   </body>
 </html>

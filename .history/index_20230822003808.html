@@ -24,7 +24,10 @@
       rel="stylesheet"
     />
     <!-- FONT SUN - MOON -->
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/moon.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/css.gg@2.0.0/icons/css/moon.css"
+      rel="stylesheet"
+    />
     <!-- Owl carausel -->
     <link
       rel="stylesheet"
@@ -980,21 +983,21 @@
     </script>
     <!-- DARK-MODE -->
     <script>
-      const moonIcon = document.querySelector('.gg-moon');
-const sunIcon = document.querySelector('.gg-sun');
-const body = document.querySelector('body');
+      const checkbox = document.getElementById("checkbox");
+      const body = document.querySelector("body");
+      const modeContainer = document.querySelector(".mode-container");
 
-moonIcon.addEventListener('click', function() {
-  body.classList.add('dark-mode');
-  moonIcon.style.display = 'none';
-  sunIcon.style.display = 'inline-block';
-});
-
-sunIcon.addEventListener('click', function() {
-  body.classList.remove('dark-mode');
-  sunIcon.style.display = 'none';
-  moonIcon.style.display = 'inline-block';
-});
+      checkbox.addEventListener("change", function () {
+        if (this.checked) {
+          body.classList.add("dark-mode");
+          modeContainer.classList.remove("gg-moon");
+          modeContainer.classList.add("gg-sun");
+        } else {
+          body.classList.remove("dark-mode");
+          modeContainer.classList.remove("gg-sun");
+          modeContainer.classList.add("gg-moon");
+        }
+      });
     </script>
   </body>
 </html>

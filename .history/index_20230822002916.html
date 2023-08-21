@@ -23,8 +23,6 @@
       href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;700&family=Nunito:wght@200;300;400;500;600;700;800;900;1000&family=Roboto:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <!-- FONT SUN - MOON -->
-    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/moon.css' rel='stylesheet'>
     <!-- Owl carausel -->
     <link
       rel="stylesheet"
@@ -152,18 +150,18 @@
           </div>
           <!-- toggle switch for light and dark theme -->
           <div class="mobile-position DarkandLight">
-            <nav class="navigation">
-              <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                  <input type="checkbox" id="checkbox" />
-                  <div class="mode-container">
-                    <i class="gg-moon"></i>
-                    <i class="gg-sun"></i>
-                  </div>
-                </label>
-              </div>
-            </nav>
-          </div>
+  <nav class="navigation">
+    <div class="theme-switch-wrapper">
+      <label class="theme-switch" for="checkbox">
+        <input type="checkbox" id="checkbox" />
+        <div class="mode-container">
+          <i class="gg-moon"></i>
+          <i class="gg-sun"></i>
+        </div>
+      </label>
+    </div>
+  </nav>
+</div>
           <!-- //toggle switch for light and dark theme -->
         </nav>
       </div>
@@ -977,24 +975,6 @@
           $("#search").css("visibility", "hidden").css("opacity", "0");
         });
       });
-    </script>
-    <!-- DARK-MODE -->
-    <script>
-      const moonIcon = document.querySelector('.gg-moon');
-const sunIcon = document.querySelector('.gg-sun');
-const body = document.querySelector('body');
-
-moonIcon.addEventListener('click', function() {
-  body.classList.add('dark-mode');
-  moonIcon.style.display = 'none';
-  sunIcon.style.display = 'inline-block';
-});
-
-sunIcon.addEventListener('click', function() {
-  body.classList.remove('dark-mode');
-  sunIcon.style.display = 'none';
-  moonIcon.style.display = 'inline-block';
-});
     </script>
   </body>
 </html>
