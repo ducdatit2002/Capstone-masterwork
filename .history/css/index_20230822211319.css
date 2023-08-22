@@ -1082,20 +1082,8 @@ footer .copyright a {
 .cd-top--fade-out {
   opacity: 0.5;
 }
-/* DARK AND MODE */
-/* Thêm các kiểu tùy chỉnh cho dark mode */
-/* body.dark-mode {
-  background-color: #000000;
-  color: #ffffff;
-}
+/* DARK-MODE */
 
-body.dark-mode .gg-sun {
-  display: block;
-}
-
-body.dark-mode .gg-moon {
-  display: none;
-} */
 @media only screen and (max-width: 415px) {
 .mobile-position {
     top: 8px;

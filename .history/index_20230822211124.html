@@ -981,22 +981,34 @@
     </script>
     <!-- DARK-MODE -->
     <script>
-      const moonIcon = document.querySelector(".gg-moon");
-      const sunIcon = document.querySelector(".gg-sun");
-      const body = document.querySelector("body");
+var modeContainer = document.getElementById("switch-mode");
+var checkbox = document.getElementById("checkbox");
+var body = document.body;
+var ggMoon = modeContainer.querySelector(".gg-moon");
+var ggSun = modeContainer.querySelector(".gg-sun");
 
-      moonIcon.addEventListener("click", function () {
-        body.classList.add("dark-mode");
-        moonIcon.style.display = "none";
-        sunIcon.style.display = "inline-block";
-      });
+checkbox.addEventListener("change", function () {
+  if (checkbox.checked) {
+    body.classList.remove("light-mode");
+    body.classList.add("dark-mode");
+    ggMoon.style.display = "none";
+    ggSun.style.display = "block";
+  } else {
+    body.classList.remove("dark-mode");
+    body.classList.add("light-mode");
+    ggMoon.style.display = "block";
+    ggSun.style.display = "block";
+  }
+});
 
-      sunIcon.addEventListener("click", function () {
-        body.classList.remove("dark-mode");
-        sunIcon.style.display = "none";
-        moonIcon.style.display = "inline-block";
-      });
+// Kiểm tra trạng thái ban đầu của checkbox và cập nhật hiển thị
+if (checkbox.checked) {
+  ggMoon.style.display = "none";
+  ggSun.style.display = "block";
+} else {
+  ggMoon.style.display = "block";
+  ggSun.style.display = "none";
+}
     </script>
   </body>
-
 </html>

@@ -981,22 +981,18 @@
     </script>
     <!-- DARK-MODE -->
     <script>
-      const moonIcon = document.querySelector(".gg-moon");
-      const sunIcon = document.querySelector(".gg-sun");
-      const body = document.querySelector("body");
+      var modeContainer = document.getElementById("switch-mode");
+      var checkbox = document.getElementById("checkbox");
 
-      moonIcon.addEventListener("click", function () {
-        body.classList.add("dark-mode");
-        moonIcon.style.display = "none";
-        sunIcon.style.display = "inline-block";
-      });
-
-      sunIcon.addEventListener("click", function () {
-        body.classList.remove("dark-mode");
-        sunIcon.style.display = "none";
-        moonIcon.style.display = "inline-block";
+      checkbox.addEventListener("change", function () {
+        if (checkbox.checked) {
+          modeContainer.classList.remove("light-mode");
+          modeContainer.classList.add("dark-mode");
+        } else {
+          modeContainer.classList.remove("dark-mode");
+          modeContainer.classList.add("light-mode");
+        }
       });
     </script>
   </body>
-
 </html>

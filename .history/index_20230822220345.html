@@ -980,7 +980,7 @@
       });
     </script>
     <!-- DARK-MODE -->
-    <script>
+    <!-- <script>
       const moonIcon = document.querySelector(".gg-moon");
       const sunIcon = document.querySelector(".gg-sun");
       const body = document.querySelector("body");
@@ -996,7 +996,30 @@
         sunIcon.style.display = "none";
         moonIcon.style.display = "inline-block";
       });
-    </script>
+    </script> -->
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+  var checkbox = document.getElementById("checkbox");
+  var modeContainer = document.getElementById("switch-mode");
+
+  checkbox.addEventListener("change", function() {
+    if (checkbox.checked) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+  });
+
+  modeContainer.addEventListener("click", function() {
+    checkbox.checked = !checkbox.checked;
+    if (checkbox.checked) {
+      document.body.classList.add("dark-mode");
+    } else {
+      document.body.classList.remove("dark-mode");
+    }
+  });
+});
+</script>
   </body>
 
 </html>

@@ -998,5 +998,21 @@
       });
     </script>
   </body>
-
+      <!-- LIGHT AND DARK -->
+    <script>
+      const switch_mode = document.querySelector("#switch-mode i");
+      // Load mode
+      let mode = localStorage.getItem("darkmode");
+      if (mode == "true") {
+        body.classList.add("dark");
+        switch_mode.className = "gg-sun";
+      }
+      switch_mode.addEventListener("click", () => {
+        switch_mode.classList.toggle("gg-moon");
+        switch_mode.classList.toggle("gg-sun");
+        let mode = body.classList.toggle("dark");
+        // save mode
+        localStorage.setItem("darkmode", mode);
+      });
+    </script>
 </html>

@@ -980,7 +980,7 @@
       });
     </script>
     <!-- DARK-MODE -->
-    <script>
+    <!-- <script>
       const moonIcon = document.querySelector(".gg-moon");
       const sunIcon = document.querySelector(".gg-sun");
       const body = document.querySelector("body");
@@ -996,7 +996,40 @@
         sunIcon.style.display = "none";
         moonIcon.style.display = "inline-block";
       });
-    </script>
+    </script> -->
+    <script>
+document.addEventListener("DOMContentLoaded", function() {
+  var checkbox = document.getElementById("checkbox");
+  var moonIcon = document.querySelector(".gg-moon");
+  var sunIcon = document.querySelector(".gg-sun");
+
+  checkbox.addEventListener("change", function() {
+    if (checkbox.checked) {
+      document.body.classList.add("dark-mode");
+      moonIcon.style.display = "none";
+      sunIcon.style.display = "block";
+    } else {
+      document.body.classList.remove("dark-mode");
+      moonIcon.style.display = "block";
+      sunIcon.style.display = "none";
+    }
+  });
+
+  moonIcon.addEventListener("click", function() {
+    checkbox.checked = true;
+    document.body.classList.add("dark-mode");
+    moonIcon.style.display = "none";
+    sunIcon.style.display = "block";
+  });
+
+  sunIcon.addEventListener("click", function() {
+    checkbox.checked = false;
+    document.body.classList.remove("dark-mode");
+    moonIcon.style.display = "block";
+    sunIcon.style.display = "none";
+  });
+});
+</script>
   </body>
 
 </html>

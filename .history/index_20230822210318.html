@@ -981,22 +981,23 @@
     </script>
     <!-- DARK-MODE -->
     <script>
-      const moonIcon = document.querySelector(".gg-moon");
-      const sunIcon = document.querySelector(".gg-sun");
-      const body = document.querySelector("body");
+var modeContainer = document.getElementById("switch-mode");
+var checkbox = document.getElementById("checkbox");
+var body = document.body;
 
-      moonIcon.addEventListener("click", function () {
-        body.classList.add("dark-mode");
-        moonIcon.style.display = "none";
-        sunIcon.style.display = "inline-block";
-      });
-
-      sunIcon.addEventListener("click", function () {
-        body.classList.remove("dark-mode");
-        sunIcon.style.display = "none";
-        moonIcon.style.display = "inline-block";
-      });
+checkbox.addEventListener("change", function () {
+  if (checkbox.checked) {
+    body.classList.remove("light-mode");
+    body.classList.add("dark-mode");
+    modeContainer.querySelector(".gg-moon").style.display = "none";
+    modeContainer.querySelector(".gg-sun").style.display = "block";
+  } else {
+    body.classList.remove("dark-mode");
+    body.classList.add("light-mode");
+    modeContainer.querySelector(".gg-moon").style.display = "block";
+    modeContainer.querySelector(".gg-sun").style.display = "none";
+  }
+});
     </script>
   </body>
-
 </html>

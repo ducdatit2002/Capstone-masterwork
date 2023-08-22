@@ -65,7 +65,7 @@
             data-target="#navbar-content"
             aria-controls="navbar-content"
             aria-expanded="false"
-            aria-label="Toggle Navigation"
+            aria-label="Toggle Navigation"        
             onclick="toggleButton()"
           >
             <span
@@ -563,8 +563,7 @@
                   <div class="panel1">
                     <div class="container">
                       <div class="row">
-                        <div class="col-md-6 panel-img">
-                          <img
+                        <div class="col-md-6 panel-img"><img
                             src="./img/b5.jpg"
                             alt=""
                             class="img-fluid img-curve"
@@ -771,7 +770,7 @@
       </div>
     </section>
     <!-- FOOTER (HUY)-->
-    <footer class="py-5">
+    <footer class="py-5" >
       <div class="container">
         <div class="row">
           <div class="col-lg-6 column">
@@ -997,6 +996,21 @@
         moonIcon.style.display = "inline-block";
       });
     </script>
+    <!-- LIGHT AND DARK -->
+   const body = document.body;
+   const switch_mode = document.querySelector('#switch-mode i');
+   // Load mode 
+   let mode = localStorage.getItem('darkmode');
+   if(mode=='true'){
+      body.classList.add('dark');
+      switch_mode.className = "bi bi-brightness-high-fill";
+   }
+   switch_mode.addEventListener('click', () =>{
+      switch_mode.classList.toggle('bi-moon-stars-fill');
+      switch_mode.classList.toggle('bi-brightness-high-fill');
+      let mode = body.classList.toggle('dark');
+      // save mode 
+      localStorage.setItem('darkmode', mode);
+   });
   </body>
-
 </html>

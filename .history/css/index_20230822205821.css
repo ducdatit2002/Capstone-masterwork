@@ -456,6 +456,7 @@ input[type="checkbox"] {
   height: 24px;
   padding: 0px 0;
 }
+
 .mode-container .gg-sun {
   display: none;
 }
@@ -528,6 +529,8 @@ input[type="checkbox"] {
   left: 2px;
 }
 /* BANNER */
+.banner {
+}
 .banner__content {
   background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)),
     url(../img/banner.jpg);
@@ -1082,20 +1085,6 @@ footer .copyright a {
 .cd-top--fade-out {
   opacity: 0.5;
 }
-/* DARK AND MODE */
-/* Thêm các kiểu tùy chỉnh cho dark mode */
-/* body.dark-mode {
-  background-color: #000000;
-  color: #ffffff;
-}
-
-body.dark-mode .gg-sun {
-  display: block;
-}
-
-body.dark-mode .gg-moon {
-  display: none;
-} */
 @media only screen and (max-width: 415px) {
 .mobile-position {
     top: 8px;
