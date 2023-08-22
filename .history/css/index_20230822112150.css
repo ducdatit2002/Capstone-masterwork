@@ -267,21 +267,6 @@ a.dropdown-item:before {
 a.dropdown-item:hover:before {
   width: 20px;
 }
-.navbar-expand-lg .navbar-nav .dropdown-menu:before {
-    content: '';
-    width: 14px;
-    height: 14px;
-    background: #fff;
-    border: 1px solid #eee;
-    display: block;
-    border-right: none;
-    border-bottom: none;
-    transform: translateX(-50%) rotateZ(45deg);
-    position: absolute;
-    top: -7px;
-    left: 49%;
-    z-index: 1001;
-}
 .search-right {
   align-items: center;
   display: inline-grid;
@@ -1206,15 +1191,5 @@ footer .copyright a {
 }
 .mode-container {
   padding: 6px 0;
-}
-.navbar-expand-lg .navbar-nav .dropdown-menu {
-    transform: translateX(0px);
-}
-.navbar-nav .dropdown-menu {
-    text-align: center;
-}
-.panel-img {
-  min-height: 300px;
-  margin-top: 30px;
 }
 }

@@ -1207,14 +1207,4 @@ footer .copyright a {
 .mode-container {
   padding: 6px 0;
 }
-.navbar-expand-lg .navbar-nav .dropdown-menu {
-    transform: translateX(0px);
-}
-.navbar-nav .dropdown-menu {
-    text-align: center;
-}
-.panel-img {
-  min-height: 300px;
-  margin-top: 30px;
-}
 }

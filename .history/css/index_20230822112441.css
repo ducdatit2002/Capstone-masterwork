@@ -271,8 +271,8 @@ a.dropdown-item:hover:before {
     content: '';
     width: 14px;
     height: 14px;
-    background: #fff;
-    border: 1px solid #eee;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
     display: block;
     border-right: none;
     border-bottom: none;
@@ -1206,15 +1206,5 @@ footer .copyright a {
 }
 .mode-container {
   padding: 6px 0;
-}
-.navbar-expand-lg .navbar-nav .dropdown-menu {
-    transform: translateX(0px);
-}
-.navbar-nav .dropdown-menu {
-    text-align: center;
-}
-.panel-img {
-  min-height: 300px;
-  margin-top: 30px;
 }
 }
