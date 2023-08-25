@@ -51,7 +51,7 @@ function dark_mode(){
     }
     
 }
-
+// 
 function light_mode(){
     const banner__photo = document.querySelector('.banner__content');
      banner__photo.style.background = 'linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92))';
@@ -97,6 +97,7 @@ function light_mode(){
         background.style.backgroundAttachment = 'fixed';
 
     }
+    var header__backgrounds = document.querySelectorAll(`.banner__content`);
     for ( var background1 of header__backgrounds ){
         background1.style.background = 'linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/banner.jpg)';
         background1.style.backgroundSize = 'cover';
