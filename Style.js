@@ -49,7 +49,7 @@ function dark_mode(){
         background1.style.backgroundAttachment = 'fixed';
 
     }
-    
+ 
 }
 // 
 function light_mode(){
@@ -104,5 +104,9 @@ function light_mode(){
         background1.style.backgroundPosition = 'center';
         background1.style.backgroundAttachment = 'fixed';
 
+    }
+    var another_colors = document.querySelectorAll(`.another_color`);
+    for ( var another_color of another_colors ){
+        another_color.style.backgroundColor = '#f7f9fc';
     }
 }
