@@ -664,7 +664,7 @@
 
     <div class="clear"></div>
     <!-- OUR CLIENTS (HUY)-->
-    <div class="section__color">
+    <div class="background">
       <section class="ourClients py-5">
         <div class="container">
           <div class="header-section">
@@ -947,10 +947,8 @@
       referrerpolicy="no-referrer"
     ></script>
     <!-- COUNTER JS -->
-    <script src="./Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script>
-    <script>
-      $(".num").countUp();
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
+
     <!-- BACK TO TOP JS -->
     <script src="./back-to-top-master/assets/js/main.js"></script>
     <script src="./back-to-top-master/assets/js/util.js"></script>
@@ -958,6 +956,10 @@
       data-cfasync="false"
       src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"
     ></script>
+    <!-- COUNT UP -->
+    <script>
+      $(".num").counterUp();
+    </script>
     <script>
       // When the user scrolls down 20px from the top of the document, show the button
       window.onscroll = function () {

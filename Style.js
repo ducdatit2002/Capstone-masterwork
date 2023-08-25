@@ -34,6 +34,22 @@ function dark_mode(){
     for ( var endText of number__footer ){
         endText.style.color = 'white';
     }
+    var number__backgrounds = document.querySelectorAll(`.ourClients`);
+    for ( var background of number__backgrounds ){
+        background.style.background = 'linear-gradient(to right, #000, rgba(247, 249, 252, 0.77)), url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b2.jpg)';
+        background.style.backgroundSize = 'cover';
+        background.style.backgroundPosition = 'center';
+        background.style.backgroundAttachment = 'fixed';
+    }
+    var header__backgrounds = document.querySelectorAll(`.banner__content`);
+    for ( var background1 of header__backgrounds ){        
+        background1.style.background = 'linear-gradient(to right, #000, rgba(255, 255, 255, 0.92)), url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/banner.jpg)';
+        background1.style.backgroundSize = 'cover';
+        background1.style.backgroundPosition = 'center';
+        background1.style.backgroundAttachment = 'fixed';
+
+    }
+    
 }
 
 function light_mode(){
@@ -68,8 +84,24 @@ function light_mode(){
     for ( var li of number__lies ){
         li.style.backgroundColor = '#fff';
     }
+
     var number__footer = document.querySelectorAll(`.footertext`);
     for ( var endText of number__footer ){
         endText.style.color = '#5a5a5a';
+    }
+    var number__backgrounds = document.querySelectorAll(`.ourClients`);
+    for ( var background of number__backgrounds ){
+        background.style.background = 'linear-gradient(to right, #fff, rgba(247, 249, 252, 0.77)), url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/b2.jpg)';
+        background.style.backgroundSize = 'cover';
+        background.style.backgroundPosition = 'center';
+        background.style.backgroundAttachment = 'fixed';
+
+    }
+    for ( var background1 of header__backgrounds ){
+        background1.style.background = 'linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)), url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/banner.jpg)';
+        background1.style.backgroundSize = 'cover';
+        background1.style.backgroundPosition = 'center';
+        background1.style.backgroundAttachment = 'fixed';
+
     }
 }
