@@ -78,9 +78,9 @@ a:hover, a:active {
     outline: 0;
 }
 .btn-light {
-    color: #212529 !important;
+    color: #212529;
     background-color: #f8f9fa;
-    border-color: #f8f9fa !important;
+    border-color: #f8f9fa;
 }
 /* BUTTONS */
 .theme-button {

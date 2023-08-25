@@ -63,24 +63,18 @@ section {
 .hide {
   display: none;
 }
-/* BUTTON XỬ LÝ */
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
     color: #fff;
     background-color: #dc4f72;
-    border-color: #dc4f72 !important;
+    border-color: #dc4f72;
 }
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
     color: #fff;
     background-color: #cf2952;
-    border-color: #c4274e !important;
+    border-color: #c4274e;
 }
 a:hover, a:active {
     outline: 0;
-}
-.btn-light {
-    color: #212529 !important;
-    background-color: #f8f9fa;
-    border-color: #f8f9fa !important;
 }
 /* BUTTONS */
 .theme-button {

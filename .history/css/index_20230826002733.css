@@ -80,7 +80,7 @@ a:hover, a:active {
 .btn-light {
     color: #212529 !important;
     background-color: #f8f9fa;
-    border-color: #f8f9fa !important;
+    border-color: #f8f9fa;
 }
 /* BUTTONS */
 .theme-button {

@@ -77,11 +77,6 @@ section {
 a:hover, a:active {
     outline: 0;
 }
-.btn-light {
-    color: #212529 !important;
-    background-color: #f8f9fa;
-    border-color: #f8f9fa !important;
-}
 /* BUTTONS */
 .theme-button {
   transition: 0.3s ease-out;
