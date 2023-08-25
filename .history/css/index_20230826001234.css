@@ -1172,7 +1172,11 @@ body.dark-mode .gg-moon {
   }
   .nav-link.active::before {
     width: 0%;
+<<<<<<< HEAD
+}
+=======
   }
+>>>>>>> feature_branch
 }
 @media only screen and (max-width: 991px) {
   .navbar-nav {
@@ -1217,6 +1221,28 @@ body.dark-mode .gg-moon {
   .navbar-toggler {
     border: 0 none;
     font-size: 24px;
+<<<<<<< HEAD
+}
+.mobile-position {
+    position: absolute;
+    right: 50px;
+    top: 12px;
+}
+.mode-container {
+  padding: 6px 0;
+}
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    transform: translateX(0px);
+}
+.navbar-nav .dropdown-menu {
+    text-align: center;
+}
+.panel-img {
+  min-height: 300px;
+  margin-top: 30px;
+}
+}
+=======
   }
   .mobile-position {
     position: absolute;
@@ -1237,3 +1263,4 @@ body.dark-mode .gg-moon {
     margin-top: 30px;
   }
 }
+>>>>>>> feature_branch
