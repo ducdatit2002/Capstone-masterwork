@@ -141,7 +141,7 @@ window.addEventListener('DOMContentLoaded', function () {
   var mode = localStorage.getItem("mode");
   if (mode === "true") {
     dark_mode();
-  } else if (mode === "false") {
+  } else if (mode === "light") {
     light_mode();
   }
 });

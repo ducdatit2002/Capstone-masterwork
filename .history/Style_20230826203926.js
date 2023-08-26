@@ -1,6 +1,6 @@
 function dark_mode(){
   // Lưu trạng thái dark-mode vào localStorage
-  localStorage.setItem("mode", "true");
+  localStorage.setItem("mode", "dark");
   // Thực hiện các thay đổi cần thiết cho dark-mode ở đây
   const banner__photo = document.querySelector(".banner__content");
   banner__photo.style.background =
@@ -59,17 +59,16 @@ function dark_mode(){
   for (var anothers_light_black of another_light_black) {
     anothers_light_black.style.backgroundColor = "#1a1a1a";
   }
-  var search_color = document.querySelectorAll(`.search_color`);
-  for (var search_color of search_color) {
-    search_color.style.color = "#b7b7b7";
-    search_color.style.borderColor = "#333";
+  var another_light_black = document.querySelectorAll(`.anothers_light_black`);
+  for (var anothers_light_black of another_light_black) {
+    anothers_light_black.style.backgroundColor = "#1a1a1a";
   }
   
 }
 // 
 function light_mode(){
   // Lưu trạng thái light-mode vào localStorage
-  localStorage.setItem("mode", "false");
+  localStorage.setItem("mode", "light");
   // Thực hiện các thay đổi cần thiết cho light-mode ở đây
   const banner__photo = document.querySelector(".banner__content");
   banner__photo.style.background =
@@ -129,19 +128,14 @@ function light_mode(){
   for (var another_color of another_colors) {
     another_color.style.backgroundColor = "#f7f9fc";
   }
-  var search_color = document.querySelectorAll(`.search_color`);
-  for (var search_color of search_color) {
-    search_color.style.color = "#5a5a5a";
-    search_color.style.borderColor = "#eee";
-  }
 }
 
 // Kiểm tra trạng thái đã lưu trong localStorage khi trang được tải
 window.addEventListener('DOMContentLoaded', function () {
   var mode = localStorage.getItem("mode");
-  if (mode === "true") {
+  if (mode === "dark") {
     dark_mode();
-  } else if (mode === "false") {
+  } else if (mode === "light") {
     light_mode();
   }
 });

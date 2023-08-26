@@ -139,9 +139,9 @@ function light_mode(){
 // Kiểm tra trạng thái đã lưu trong localStorage khi trang được tải
 window.addEventListener('DOMContentLoaded', function () {
   var mode = localStorage.getItem("mode");
-  if (mode === "true") {
+  if (mode === "dark") {
     dark_mode();
-  } else if (mode === "false") {
+  } else if (mode === "light") {
     light_mode();
   }
 });
